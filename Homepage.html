@@ -6,7 +6,11 @@
     <link href="global.css" rel="stylesheet">
 </head>
 
-
+<style>
+    *{
+        font-family: Arial;
+    }
+</style>
 
 <body>
 <img class="backgroundImage" src="imgs/chickentacos.jpg" alt="backgroundTacoImage">
@@ -14,7 +18,7 @@
 
 <div class="hpBody">
 
-    <div style="width:787px;height: 50px;background-color:#FCF6F6;border-radius:35px;bottom:-15px;right: 20%; left: 50%;transform: translate(-50%, -50%);position: fixed;z-index: 20;">
+    <div style="width:837px;height: 50px;background-color:#FCF6F6;border-radius:35px;bottom:-15px;right: 20%; left: 50%;transform: translate(-50%, -50%);position: fixed;z-index: 20;">
         <button style="cursor: pointer;font-size:25px;border-radius:35px;background-color:red;border:0;margin-top:5px;margin-left:5px;padding:5px 10px 5px 10px;">About Us</button>
         <button style="cursor: pointer;font-size:25px;border-radius:35px;background-color:red;border:0;margin-top:5px;margin-left:5px;padding:5px 10px 5px 10px;">History</button>
         <button style="cursor: pointer;font-size:25px;border-radius:35px;background-color:red;border:0;margin-top:5px;margin-left:5px;padding:5px 10px 5px 10px;">Mission</button>
@@ -192,7 +196,7 @@
                 <div style="display: block">
                     <h1 style="padding:30px;font-size:50px;">All You Can Eat TacoTacoTaco Challenge</h1>
                     <h2 style="padding-left:30px;margin-top:-10px;">You can eat a lot. really.</h2>
-                    <div style="width: 190px;padding:10px;border-radius:20px;margin-left:30px;margin-top:30px;background-color: yellowgreen"> <h2>8:30am - 10:30pm</h2></div>
+                    <div style="width: 202px;padding:10px;border-radius:20px;margin-left:30px;margin-top:30px;background-color: yellowgreen"> <h2>8:30am - 10:30pm</h2></div>
                 </div>
 
             </div>
@@ -208,7 +212,7 @@
             <div style="display: block">
                 <h1 style="padding:30px;font-size:50px;">Our 25-Year Anniversary Since Launch</h1>
                 <h2 style="padding-left:30px;margin-top:-10px;">We will organize some food challenges and discounts!</h2>
-                <div style="width: 190px;padding:10px;border-radius:20px;margin-left:30px;margin-top:30px;background-color: yellowgreen"> <h2>6:30am - 11:30pm</h2></div>
+                <div style="width: 201px;padding:10px;border-radius:20px;margin-left:30px;margin-top:30px;background-color: yellowgreen"> <h2>6:30am - 11:30pm</h2></div>
             </div>
 
         </div>
@@ -223,7 +227,7 @@
             <div style="display: block">
                 <h1 style="padding:30px;font-size:50px;">Biggest Discounts Of The Year</h1>
                 <h2 style="padding-left:30px;margin-top:-10px;">Also some free samples!</h2>
-                <div style="width: 190px;padding:10px;border-radius:20px;margin-left:30px;margin-top:30px;background-color: yellowgreen"> <h2>8:30am - 10:30pm</h2></div>
+                <div style="width: 202px;padding:10px;border-radius:20px;margin-left:30px;margin-top:30px;background-color: yellowgreen"> <h2>8:30am - 10:30pm</h2></div>
             </div>
 
         </div>
@@ -234,13 +238,14 @@
         </div>
     </div>
 
-    <div class="section" style="background-color: #1F1E20;color:#FCF6F6;">
-        <div style="background-color:black;width: fit-content">
+    <div class="section" style="background-color: #1F1E20;color:#FCF6F6;display: flex;justify-content: center;padding-bottom:200px;">
+        <div style="width: 1000px;border-radius:26px;height:515px;background-color:#E53935; display: flex;">
+        <div style="background-color:black;width: fit-content;padding:30px;border-radius:25px;">
             <form >
                <div style="display: flex">
                 <div>
                 <label style="display: flex" for="firstName">First Name</label>
-                <input style="width: 200px;font-size:30px;" id="firstName">
+                <input style="width: 200px;margin-right:30px;font-size:30px;" id="firstName">
                 </div>
 
                 <div>
@@ -250,16 +255,26 @@
                </div>
 
                 <label style="display: flex" for="Email">Email</label>
-                <input id="Email">
+                <input id="Email" style="width: 438px;font-size:30px;">
 
                 <label style="display: flex" for="Message">Message</label>
-                <input id="Message">
+                <input id="Message" style="width: 438px;font-size:30px;">
 
                 <label style="display: flex" for="Text" >Additional Details</label>
-                <textarea style="max-height: 250px;height: 250px;" id="Text"></textarea>
+                <textarea style="font-size:30px;width: 440px;max-height: 250px;height: 250px;resize:none" id="Text"></textarea>
             </form>
 
         </div>
+            <div style="width: 100%;">
+                <h1 style="font-size:60px;margin-top:30px;text-align:center;">Contact Form</h1>
+                <h2 style="margin-left:30px;margin-top:50px;">Do you want to host a private event?</h2>
+                <h2 style="margin-left:30px;margin-top:15px;">Do you want to get involved in our team?</h2>
+                <h2 style="margin-left:30px;margin-top:15px;">Do you have a brilliant idea we should know?</h2>
+                <h2 style="margin-left:30px;margin-top:15px;">Tell us anything!</h2>
+                <button type="submit">Send Message</button>
+            </div>
+
+            </div>
     </div>
 
 
