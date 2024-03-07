@@ -45,9 +45,6 @@ function ChangeHourBtn(btnId){
 
     PrevBtn3=btnId;
 
-
-    document.getElementById('time').style.innerHTML='04 - 07 PM';
-
 }
 
 

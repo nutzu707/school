@@ -8,27 +8,22 @@
 
 <script src="main.js"></script>
 
-<style>
-    *{
-        font-family: Arial;
-    }
-</style>
 
 <body>
 <img class="backgroundImage" src="imgs/chickentacos.jpg" alt="backgroundTacoImage">
-<img class="bigLogo" src="imgs/tacotacotacologo.png" alt="tacotacotacologo" style="margin-left:-50px;">
+<img class="bigLogo" src="imgs/tacotacotacologo.png" alt="tacotacotacologo">
 
 <div class="hpBody">
 
-    <div style="width:991px;height: 49px;background-color:#FCF6F6;border-radius:35px;bottom:-15px;right: 20%; left: 50%;transform: translate(-50%, -50%);position: fixed;z-index: 20;">
-        <button id="about" onclick="scrollToThis('AboutSection'); ChangeBtnColor(this.id)" style="cursor: pointer;font-size:25px;border-radius:35px;background-color: #1F1E20;color:#FCF6F6;border:0;margin-top:5px;margin-left:6px;padding:5px 10px 5px 10px;text-shadow: 2px 2px rgba(0,0,0,100%)">About Us</button>
-        <button id="history" onclick="scrollToThis('HistorySection'); ChangeBtnColor(this.id)" style="cursor: pointer;font-size:25px;border-radius:35px;background-color:#FCF6F6;color:#1F1E20;border:0;margin-top:5px;margin-left:5px;padding:5px 10px 5px 10px;">History</button>
-        <button id="values" onclick="scrollToThis('ValuesSection');ChangeBtnColor(this.id)" style="cursor: pointer;font-size:25px;border-radius:35px;background-color:#FCF6F6;border:0;margin-top:5px;margin-left:5px;color:#1F1E20;padding:5px 10px 5px 10px;">Mission</button>
-        <button id="menu" onclick="scrollToThis('MenuSection');ChangeBtnColor(this.id)" style="cursor: pointer;font-size:25px;border-radius:35px;background-color:#FCF6F6;border:0;margin-top:5px;margin-left:5px;color:#1F1E20;padding:5px 10px 5px 10px;">Menu</button>
-        <button id="reservation" onclick="scrollToThis('ReservationSection');ChangeBtnColor(this.id)" style="cursor: pointer;font-size:25px;border-radius:35px;background-color:#FCF6F6;border:0;margin-top:5px;margin-left:5px;color:#1F1E20;padding:5px 10px 5px 10px;">Reservations</button>
-        <button id="gallery" onclick="scrollToThis('GallerySection');ChangeBtnColor(this.id)" style="cursor: pointer;font-size:25px;border-radius:35px;background-color:#FCF6F6;border:0;margin-top:5px;margin-left:5px;color:#1F1E20;padding:5px 10px 5px 10px;">Gallery</button>
-        <button id="events" onclick="scrollToThis('EventsSection');ChangeBtnColor(this.id)" style="cursor: pointer;font-size:25px;border-radius:35px;background-color:#FCF6F6;border:0;margin-top:5px;margin-left:5px;color:#1F1E20;padding:5px 10px 5px 10px;">Events</button>
-        <button id="contact" onclick="scrollToThis('ContactSection');ChangeBtnColor(this.id)" style="cursor: pointer;font-size:25px;border-radius:35px;background-color:#FCF6F6;border:0;margin-top:5px;margin-left:5px;color:#1F1E20;padding:5px 10px 5px 10px;">Contact Us</button>
+    <div class="menuBar">
+        <button id="about" onclick="scrollToThis('AboutSection'); ChangeBtnColor(this.id)" class="barButton" style="background-color: #1F1E20;color:#FCF6F6">About Us</button>
+        <button id="history" onclick="scrollToThis('HistorySection'); ChangeBtnColor(this.id)" class="barButton">History</button>
+        <button id="values" onclick="scrollToThis('ValuesSection');ChangeBtnColor(this.id)" class="barButton">Mission</button>
+        <button id="menu" onclick="scrollToThis('MenuSection');ChangeBtnColor(this.id)" class="barButton" >Menu</button>
+        <button id="reservation" onclick="scrollToThis('ReservationSection');ChangeBtnColor(this.id)" class="barButton">Reservations</button>
+        <button id="gallery" onclick="scrollToThis('GallerySection');ChangeBtnColor(this.id)" class="barButton">Gallery</button>
+        <button id="events" onclick="scrollToThis('EventsSection');ChangeBtnColor(this.id)" class="barButton">Events</button>
+        <button id="contact" onclick="scrollToThis('ContactSection');ChangeBtnColor(this.id)" class="barButton">Contact Us</button>
     </div>
 
 
@@ -37,37 +32,37 @@
             <h1 style="text-align:center;padding-left:300px;padding-right:300px;font-size:70px;text-shadow: 5px 5px rgba(0,0,0,100%)">Welcome to TacoTacoTaco, where every taco tells a story, and each bite is a journey through the rich tapestry of Mexican flavors. Our restaurant's story and history are deeply rooted in a passion for authentic Mexican cuisine and a commitment to delivering an exceptional dining experience.</h1>
         <button onclick="scrollToThis('MenuSection')" style="margin-top:100px;border:0;font-size:50px;padding:10px;border-radius:20px;cursor:pointer;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7), 0 4px 10px 0 rgba(0, 0, 0, 0.9);text-shadow: .5px .5px rgba(0,0,0,100%)">See Our Menu</button>
     </div>
-    <div class="section" style="color:#FCF6F6;background-color: #1F1E20;padding-top:340px;justify-content: center;display: flex;margin-bottom:-300px;" id="HistorySection">
-        <div style="display:flex;background-color:#FCF6F6;width: 1500px;height: 400px;border-radius:25px;color:#1F1E20;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7), 0 4px 10px 0 rgba(0, 0, 0, 0.9)">
-            <div style="background-color:#7CB342;width: 1900px;border-radius:25px;display: flex">
+    <div class="section" style="background-color:#1F1E20;padding-top:340px;justify-content: center;display: flex;margin-bottom:-300px;" id="HistorySection">
+        <div class="HistorySection">
+            <div class="historyDivider">
                 <h1 style="color:#FCF6F6;align-self:center;text-align:center;font-size:100px;text-shadow: 5px 5px rgba(0,0,0,100%)">Our History</h1>
             </div>
             <h2 style="text-align:center;margin-top:80px;font-size:40px;">In 1920, Papa Taco Johnes set out to capture the essence of Mexican street food, igniting a culinary journey that evolved from a humble taco stand to the cherished establishment we are today. Our commitment to tradition and quality remains unwavering.</h2>
         </div>
     </div>
     <div id="ValuesSection" class="section" style="color:#FCF6F6;background-color: #1F1E20;padding-top:300px;justify-content: center;display: flex;padding-bottom:200px;">
-        <div style="display:flex;background-color:#FCF6F6;width: 1500px;height: 400px;border-radius:25px;color:#1F1E20;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7), 0 4px 10px 0 rgba(0, 0, 0, 0.9)">
+        <div class="MissionSection">
             <h2 style="text-align:center;margin-top:80px;font-size:40px;">At TacoTacoTaco, we transport you to the lively streets of Mexico City with each taco. Beyond a meal, we offer an experience: a celebration of flavors, culture, and shared moments. Our mission blends tradition and innovation, creating an atmosphere where every bite is a journey.</h2>
 
-            <div style="background-color:#FFA500;width: 2100px;border-radius:25px;display: flex">
-                <h1 style="color:#FCF6F6;align-self:center;text-align:center;font-size:100px;text-shadow: 5px 5px rgba(0,0,0,100%)">Our Mission</h1>
+            <div class="ourMissionSection">
+                <h1 class="ourMissionBigText">Our Mission</h1>
             </div>
         </div>
     </div>
-    <div class="section" style="color:#FCF6F6;background-color: #1F1E20;margin-top:-200px;padding-top:100px;" id="MenuSection">
-        <h1 style="text-align:center;font-size:70px;text-shadow: 5px 5px rgba(0,0,0,100%)">Menu</h1>
+    <div class="section menuSection" id="MenuSection">
+        <h1 class="titleText">Menu</h1>
         <h3 style="text-align:center; margin-top:25px;text-shadow: 3px 3px rgba(0,0,0,100%)">We are proud to offer a variety of dishes that suit everyone's tongues.</h3>
     </div>
     <div class="section" style="margin-top:-350px; text-align:center;color:#FCF6F6;background-color: #1F1E20;">
         <h2 style="margin-bottom:30px;text-shadow: 3px 3px rgba(0,0,0,100%)">Appetizers</h2>
         <div style="display: flex;justify-content: center">
-            <div class="dish" style="background-color:#FFA500;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7), 0 4px 10px 0 rgba(0, 0, 0, 0.9)">
+            <div class="dish" style="background-color:#FFA500;">
                 <img style="border-radius:10px; width: 200px;padding: 5px;height: 190px;" src="imgs/taco.jpg" alt="tac1">
                 <h2 style="margin-bottom:5px;">Pancake Taco</h2>
                 <h3 style="width: 200px;margin-bottom:10px;">Maple syrup</h3>
                 <h3 style="margin-bottom:5px;">5'99 $</h3>
             </div>
-            <div class="dish" style="margin-left:30px;background-color:#FFA500;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7), 0 4px 10px 0 rgba(0, 0, 0, 0.9)">
+            <div class="dish" style="margin-left:30px;background-color:#FFA500;">
                 <img style="border-radius:10px; width: 200px;padding: 5px;height: 190px;object-fit: cover" src="imgs/tacococo.jpeg" alt="tac1">
                 <h2 style="margin-bottom:5px;">Bacon Taco</h2>
                 <h3 style="width: 200px;margin-bottom:10px;">
@@ -75,7 +70,7 @@
                 </h3>
                 <h3 style="margin-bottom:5px;">6'99 $</h3>
             </div>
-            <div class="dish" style="margin-left:30px;background-color:#FFA500;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7), 0 4px 10px 0 rgba(0, 0, 0, 0.9)">
+            <div class="dish" style="margin-left:30px;background-color:#FFA500;">
                 <img style="border-radius:10px; width: 200px;padding: 5px;height: 190px;object-fit: cover" src="imgs/taccco.jpg" alt="tac1">
                 <h2 style="margin-bottom:5px;">Egg Taco</h2>
                 <h3 style="width: 200px;margin-bottom:10px;">
@@ -88,13 +83,13 @@
     <div class="section" style="color:#FCF6F6;background-color: #1F1E20;margin-top:-100px; text-align:center;">
         <h2 style="margin-bottom:30px;text-shadow: 3px 3px rgba(0,0,0,100%)">Main Course</h2>
         <div style="display: flex;justify-content: center">
-            <div class="dish" style="background-color:#7CB342;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7), 0 4px 10px 0 rgba(0, 0, 0, 0.9)">
+            <div class="dish" style="background-color:#7CB342;">
                 <img style="border-radius:10px; width: 200px;padding: 5px;height: 190px;object-fit: cover" src="imgs/chickentacos.jpg" alt="tac1">
                 <h2 style="margin-bottom:5px;">Chicken Taco</h2>
                 <h3 style="width: 200px;margin-bottom:10px;">with lettuce</h3>
                 <h3 style="margin-bottom:5px;">5'99 $</h3>
             </div>
-            <div class="dish" style="margin-left:30px;background-color:#7CB342;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7), 0 4px 10px 0 rgba(0, 0, 0, 0.9)">
+            <div class="dish" style="margin-left:30px;background-color:#7CB342;">
                 <img style="border-radius:10px; width: 200px;padding: 5px;height: 190px;object-fit: cover" src="imgs/tako.webp" alt="tac1">
                 <h2 style="margin-bottom:5px;">Steak Taco</h2>
                 <h3 style="width: 200px;margin-bottom:10px;">
@@ -102,7 +97,7 @@
                 </h3>
                 <h3 style="margin-bottom:5px;">6'99 $</h3>
             </div>
-            <div class="dish" style="margin-left:30px;background-color:#7CB342;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7), 0 4px 10px 0 rgba(0, 0, 0, 0.9)">
+            <div class="dish" style="margin-left:30px;background-color:#7CB342;">
                 <img style="border-radius:10px; width: 200px;padding: 5px;height: 190px;object-fit: cover" src="imgs/fish-tacos-index-64ca974954d47.jpeg" alt="tac1">
                 <h2 style="margin-bottom:5px;">Fish Taco</h2>
                 <h3 style="width: 200px;margin-bottom:10px;">
@@ -115,13 +110,13 @@
     <div class="section" style="margin-top:-100px; text-align:center;color:#FCF6F6;background-color: #1F1E20;">
         <h2 style="margin-bottom:30px;text-shadow: 3px 3px rgba(0,0,0,100%)">Deserts</h2>
         <div style="display: flex;justify-content: center">
-            <div class="dish" style="background-color:#E53935;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7), 0 4px 10px 0 rgba(0, 0, 0, 0.9)">
+            <div class="dish" style="background-color:#E53935;">
                 <img style="border-radius:10px; width: 200px;padding: 5px;height: 190px;object-fit: cover" src="imgs/Choco-Taco-01-735x735.webp" alt="tac1">
                 <h2 style="margin-bottom:5px;">Ice cream Taco</h2>
                 <h3 style="width: 200px;margin-bottom:10px;">don't</h3>
                 <h3 style="margin-bottom:5px;">5'99 $</h3>
             </div>
-            <div class="dish" style="margin-left:30px;background-color:#E53935;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7), 0 4px 10px 0 rgba(0, 0, 0, 0.9)">
+            <div class="dish" style="margin-left:30px;background-color:#E53935;">
                 <img style="border-radius:10px; width: 200px;padding: 5px;height: 190px;object-fit: cover" src="imgs/brownietaco.jpeg" alt="tac1">
                 <h2 style="margin-bottom:5px;">Brownie Taco</h2>
                 <h3 style="width: 200px;margin-bottom:10px;">
@@ -129,7 +124,7 @@
                 </h3>
                 <h3 style="margin-bottom:5px;">6'99 $</h3>
             </div>
-            <div class="dish" style="margin-left:30px;background-color:#E53935;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7), 0 4px 10px 0 rgba(0, 0, 0, 0.9)">
+            <div class="dish" style="margin-left:30px;background-color:#E53935;">
                 <img style="border-radius:10px; width: 200px;padding: 5px;height: 190px;object-fit: cover" src="imgs/tacocake.jpeg" alt="tac1">
                 <h2 style="margin-bottom:5px;">Taco Cake</h2>
                 <h3 style="width: 200px;margin-bottom:10px;">
@@ -142,7 +137,7 @@
     <div class="section" style="margin-top:-100px; text-align:center;color:#FCF6F6;background-color: #1F1E20;">
         <h2 style="margin-bottom:30px;text-shadow: 3px 3px rgba(0,0,0,100%)">Easter Special</h2>
         <div style="display: flex;justify-content: center">
-            <div class="dish" style="background-color:#8D6E63;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7), 0 4px 10px 0 rgba(0, 0, 0, 0.9)">
+            <div class="dish" style="background-color:#8D6E63;">
                 <img style="border-radius:10px; width: 200px;padding: 5px;height: 190px;object-fit: cover" src="imgs/bunnytaco.webp" alt="tac1">
                 <h2 style="margin-bottom:5px;">Bunny Taco</h2>
                 <h3 style="width: 200px;margin-bottom:10px;margin-left:4px;">we killed Bugs Bunny</h3>
@@ -151,8 +146,8 @@
 
         </div>
     </div>
-    <div class="section" style="background-color: #1F1E20;display: flex;justify-content: center;padding-bottom:200px;padding-top:180px;" id="ReservationSection">
-        <div style="width: 1200px;background-color:#FFA500;height: 565px;border-radius:5px;display: flex;">
+    <div class="section reservation" id="ReservationSection">
+        <div class="reservationDivider">
             <div style="flex-direction: column">
                 <div style="width: 680px;height: 315px;background-color: #FCF6F6;margin:20px;border-radius:5px;">
                     <p style="font-size:25px;padding: 20px 20px 10px;">Make A Reservation</p>
@@ -223,7 +218,7 @@
 
                     </div>
                 </div>
-                <div style="width: 680px;height: 190px;background-color: #FCF6F6;margin:20px;border-radius:5px;">
+                <div class="contactDetails">
                     <p style="font-size:25px;padding: 20px 20px 5px;">Contact Details</p>
                     <span style="padding-left:20px;font-size:15px;color:dimgrey">Enter the details on which you want to recieve checkup information.</span>
 
@@ -238,7 +233,7 @@
                         </div>
                     </form>
                     <span style="padding-left:20px;font-size:15px;color:dimgrey">By continuing you agree to our </span>
-                    <a href="http://youtube.com"><span style="font-size:14px;color:cadetblue;">Terms And Services</span></a>
+                    <a href="https://en.wikipedia.org/wiki/Terms_of_service"><span style="font-size:14px;color:cadetblue;">Terms of Service</span></a>
 
                 </div>
             </div>
@@ -295,24 +290,24 @@
     </div>
 
 
-    <div class="section" style="text-align:center;padding-top:100px;background-color: #1F1E20;color:#FCF6F6;" id="GallerySection">
+    <div class="section galleryPhotos"  id="GallerySection">
         <h1 style="margin-bottom:50px;font-size:70px;text-shadow: 5px 5px rgba(0,0,0,100%)">Gallery</h1>
         <div style="margin-bottom:45px;">
-            <img src="imgs/taccco.jpg" style="width:300px; height: 250px;">
-            <img src="imgs/tako.webp" style="width:300px; height: 250px;">
-            <img src="imgs/tacococo.jpeg" style="width:300px; height: 250px;">
-            <img src="imgs/tatacoco.jpeg" style="width:300px; height: 250px;">
-            <img src="imgs/chickentacos.jpg" style="width:300px; height: 250px;">
+            <img alt="tacoImage" src="imgs/taccco.jpg" class="image">
+            <img alt="tacoImage" src="imgs/tako.webp" class="image">
+            <img alt="tacoImage" src="imgs/tacococo.jpeg" class="image">
+            <img alt="tacoImage" src="imgs/tatacoco.jpeg" class="image">
+            <img alt="tacoImage" src="imgs/chickentacos.jpg" class="image">
         </div>
     </div>
 
-    <div class="section" style="height: 1400px; background-color: #1F1E20;padding-top:100px;" id="EventsSection">
+    <div class="section" style="color:#FCF6F6;height: 1400px; background-color: #1F1E20;padding-top:100px;" id="EventsSection">
 
 
-        <h1 style="color:#FCF6F6;text-align:center;font-size:70px;text-shadow: 5px 5px rgba(0,0,0,100%)">Events</h1>
-        <div style="display:flex;width:100%;justify-content:center;align-items:center; margin-top:50px;">
-            <div style="width:1000px;height: 300px;border-radius:16px; box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);display: flex;background-color:#FCF6F6;">
-                <div style="text-align:center;height: 100%;min-width: 300px;background-color:black;border-radius: 15px 0 0 15px">
+        <h1 class="titleText">Events</h1>
+        <div class="eventsSection">
+            <div class="event">
+                <div class="IAmTooBoredToRememberWhatThisClassDoes">
                     <h1 style="color:white; font-size:210px;margin-bottom:-20px;">8</h1>
                     <h1 style="color:white;">Jun</h1>
 
@@ -320,15 +315,15 @@
                 <div style="display: block">
                     <h1 style="padding:30px;font-size:50px;">All You Can Eat TacoTacoTaco Challenge</h1>
                     <h2 style="padding-left:30px;margin-top:-10px;">You can eat a lot. really.</h2>
-                    <div style="width: 202px;padding:10px;border-radius:20px;margin-left:30px;margin-top:30px;background-color: yellowgreen"> <h2>8:30am - 10:30pm</h2></div>
+                    <div class="eventsTimeText"> <h2>8:30am - 10:30pm</h2></div>
                 </div>
 
             </div>
 
         </div>
-        <div style="display:flex;width:100%;justify-content:center;align-items:center; margin-top:50px;">
-        <div style="width:1000px;height: 300px;border-radius:16px; box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);display: flex;background-color:#FCF6F6;">
-            <div style="text-align:center;height: 100%;min-width: 300px;background-color:black;border-radius: 15px 0 0 15px">
+        <div class="eventsSection">
+        <div class="event">
+            <div class="IAmTooBoredToRememberWhatThisClassDoes">
                 <h1 style="color:white; font-size:210px;margin-bottom:-20px;">25</h1>
                 <h1 style="color:white;">Jul</h1>
 
@@ -336,14 +331,14 @@
             <div style="display: block">
                 <h1 style="padding:30px;font-size:50px;">Our 25-Year Anniversary Since Launch</h1>
                 <h2 style="padding-left:30px;margin-top:-10px;">We will organize some food challenges and discounts!</h2>
-                <div style="width: 201px;padding:10px;border-radius:20px;margin-left:30px;margin-top:30px;background-color: yellowgreen"> <h2>6:30am - 11:30pm</h2></div>
+                <div class="eventsTimeText"> <h2>6:30am - 11:30pm</h2></div>
             </div>
 
         </div>
         </div>
-        <div style="display:flex;width:100%;justify-content:center;align-items:center; margin-top:50px;">
-        <div style="width:1000px;height: 300px;border-radius:16px; box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);display: flex;background-color:#FCF6F6;">
-            <div style="text-align:center;height: 100%;min-width: 300px;background-color:black;border-radius: 15px 0 0 15px">
+        <div class="eventsSection">
+        <div class="event">
+            <div class="IAmTooBoredToRememberWhatThisClassDoes">
                 <h1 style="color:white; font-size:210px;margin-bottom:-20px;">11</h1>
                 <h1 style="color:white;">Aug</h1>
 
@@ -351,19 +346,19 @@
             <div style="display: block">
                 <h1 style="padding:30px;font-size:50px;">Biggest Discounts Of The Year</h1>
                 <h2 style="padding-left:30px;margin-top:-10px;">Also, some free samples!</h2>
-                <div style="width: 202px;padding:10px;border-radius:20px;margin-left:30px;margin-top:30px;background-color: yellowgreen"> <h2>8:30am - 10:30pm</h2></div>
+                <div class="eventsTimeText"> <h2>8:30am - 10:30pm</h2></div>
             </div>
 
         </div>
         </div>
         <div style="text-align:center;">
-            <h1 style="color:#FCF6F6;margin-bottom:30px;margin-top:100px;text-shadow: 5px 5px rgba(0,0,0,100%)">Want To Host a Private Event?</h1>
+            <h1 class="contactSectionBigText">Want To Host a Private Event?</h1>
             <button onclick="scrollToThis('ContactSection')" style="box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7), 0 4px 10px 0 rgba(0, 0, 0, 0.9);text-shadow: .5px .5px rgba(0,0,0,100%);align-self:center;border:0;border-radius:15px;font-size:50px;cursor:pointer;padding:10px;">Contact Us!</button>
         </div>
     </div>
 
-    <div class="section" style="padding-top:150px;background-color: #1F1E20;color:#FCF6F6;display: flex;justify-content: center;padding-bottom:200px;" id="ContactSection">
-        <div style="width: 1000px;border-radius:26px;height:515px;background-color:#E53935; display: flex;">
+    <div class="section contactSection" id="ContactSection">
+        <div class="leftSideContactSectionMaybe">
         <div style="background-color:black;width: fit-content;padding:30px;border-radius:25px;">
             <form >
                <div style="display: flex">
@@ -391,18 +386,18 @@
         </div>
             <div style="width: 100%;">
                 <h1 style="font-size:60px;margin-top:30px;text-align:center;">Contact Form</h1>
-                <h2 style="margin-left:30px;margin-top:50px;">Do you want to host a private event?</h2>
-                <h2 style="margin-left:30px;margin-top:15px;">Do you want to get involved in our team?</h2>
-                <h2 style="margin-left:30px;margin-top:15px;">Do you have a brilliant idea we should know?</h2>
-                <h2 style="margin-left:30px;margin-top:15px;">Tell us anything!</h2>
-                <button type="submit" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.7), 0 2px 2px 0 rgba(0, 0, 0, 0.9);text-shadow: .5px .5px rgba(0,0,0,100%);border:0;border-radius:5px;font-size:30px;cursor: pointer;left:50%; transform: translateX(64%);margin-top:50px;padding:10px;">Send Message</button>
+                <h2 class="contactText">Do you want to host a private event?</h2>
+                <h2 class="contactText">Do you want to get involved in our team?</h2>
+                <h2 class="contactText">Do you have a brilliant idea we should know?</h2>
+                <h2 class="contactText">Tell us anything!</h2>
+                <button type="submit" class="sendMessageButton">Send Message</button>
             </div>
 
             </div>
     </div>
 
 
-    <div class="section" style="display: flex;justify-content: center;background-color: #1F1E20;color:#FCF6F6;">
+    <div class="section footer">
         <div style="margin-right:90px;">
             <h3 style="color:dimgrey">Get in touch</h3>
             <h3>support@tacotacotaco.io</h3>
@@ -421,7 +416,7 @@
             <h3 style="color:dimgrey">TacoTacoTaco Corp. Ltd.</h3>
             <h3>Holiday Str. 23</h3>
             <h3>P6K1R2 Sault Ste. Marie, Canada</h3>
-            <a style="color:white;" href="https://www.google.com/maps"><h3>See On Map</h3></a>
+            <a style="color:white;" href="https://www.google.com/maps/dir/46.5400972,-84.3073243//@46.5387393,-84.303757,17z/data=!4m2!4m1!3e0?entry=ttu"><h3>See On Map</h3></a>
         </div>
         <div style="margin-right:90px;">
             <h3 style="color:dimgrey">Operating Hours</h3>

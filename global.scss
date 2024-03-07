@@ -1,6 +1,16 @@
+
+$_red: #E53935;
+$_green: #7CB342;
+$_papaya: #FFA500;
+$_grey: #1F1E20;
+$_whiteIsh: #FCF6F6;
+
+
+
+
 *{
   margin:0;
-  font-family: Calibri;
+  font-family: Arial, serif;
 }
 .backgroundImage{
   width: 100%;
@@ -18,10 +28,192 @@
   margin-top:-30px;
   left: 50%;
   transform: translate(-90%, -10%);
+  margin-left:-50px;
 }
 .section{
   background-color:white; width: 100%;height: 500px
+
 }
 .dish{
   border: 2px solid black; border-radius: 5px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7), 0 4px 10px 0 rgba(0, 0, 0, 0.9)
+}
+.menuBar{
+  width:991px;
+  height: 49px;
+  background-color:$_whiteIsh;
+  border-radius:35px;
+  bottom:-15px;
+  right: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 20;
+}
+.barButton{
+  cursor: pointer;
+  font-size:25px;
+  border-radius:35px;
+  background-color:$_whiteIsh;
+  color: $_grey;
+  border:0;
+  margin-top:5px;
+  margin-left:5px;
+  padding:5px 10px 5px 10px;
+}
+.HistorySection{
+  display:flex;
+  background-color:$_whiteIsh;
+  width: 1500px;
+  height: 400px;
+  border-radius:25px;
+  color: $_grey;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7), 0 4px 10px 0 rgba(0, 0, 0, 0.9);
+}
+.MissionSection{
+  display:flex;
+  background-color:$_whiteIsh;
+  width: 1500px;
+  height: 400px;
+  border-radius:25px;
+  color:$_grey;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7), 0 4px 10px 0 rgba(0, 0, 0, 0.9);
+}
+.menuSection{
+  color:$_whiteIsh;
+  background-color: $_grey;
+  margin-top:-200px;
+  padding-top:100px;
+}
+.titleText{
+  text-align:center;
+  font-size:70px;
+  text-shadow: 5px 5px rgba(0,0,0,100%);
+}
+
+.eventsSection{
+  display:flex;
+  width:100%;
+  justify-content:center;
+  align-items:center;
+  margin-top:50px;
+  color:black;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  background-color: $_grey;
+  color:$_whiteIsh;
+}
+.contactSection{
+  padding-top:150px;
+  background-color:$_grey;
+  color:$_whiteIsh;
+  display: flex;
+  justify-content: center;
+  padding-bottom:200px;
+}
+.sendMessageButton{
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.7), 0 2px 2px 0 rgba(0, 0, 0, 0.9);
+  text-shadow: .5px .5px rgba(0,0,0,100%);
+  border:0;
+  border-radius:5px;
+  font-size:30px;
+  cursor: pointer;
+  left:50%;
+  transform: translateX(64%);
+  margin-top:50px;
+  padding:10px;
+  background-color:white;
+}
+.contactText{
+  margin-left:30px;
+  margin-top:15px;
+}
+.leftSideContactSectionMaybe{
+  width: 1000px;
+  border-radius:26px;
+  height:515px;
+  background-color: $_red;
+  display: flex;
+}
+.contactSectionBigText{
+  color:$_whiteIsh;
+  margin-bottom:30px;
+  margin-top:100px;
+  text-shadow: 5px 5px rgba(0,0,0,100%)
+}
+.eventsTimeText{
+  width: 202px;
+  padding:10px;
+  border-radius:20px;
+  margin-left:30px;
+  margin-top:30px;
+  color: $_whiteIsh;
+  background-color: $_green;
+}
+.IAmTooBoredToRememberWhatThisClassDoes{
+  text-align:center;
+  height: 100%;
+  min-width: 300px;
+  background-color:black;
+  border-radius: 15px 0 0 15px
+}
+.galleryPhotos{
+  text-align:center;
+  padding-top:100px;
+  background-color: $_grey;
+  color:$_whiteIsh;
+}
+.event{
+  width:1000px;
+  height: 300px;
+  border-radius:16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  background-color:$_whiteIsh;
+}
+.image{
+  width:300px;
+  height: 250px;
+}
+.contactDetails{
+  width: 680px;
+  height: 190px;
+  background-color: $_whiteIsh;
+  margin:20px;
+  border-radius:5px;
+}
+.reservation{
+  background-color: $_grey;
+  display: flex;
+  justify-content: center;
+  padding-bottom:200px;
+  padding-top:180px;
+}
+.reservationDivider{
+  width: 1200px;
+  background-color:$_papaya;
+  height: 565px;
+  border-radius:5px;
+  display: flex;
+}
+.ourMissionBigText{
+  color:$_whiteIsh;
+  align-self:center;
+  text-align:center;
+  font-size:100px;
+  text-shadow: 5px 5px rgba(0,0,0,100%)
+}
+.ourMissionSection{
+  background-color:$_papaya;
+  width: 2100px;
+  border-radius:25px;
+  display: flex
+}
+.historyDivider{
+  background-color:$_green;
+  width: 1900px;
+  border-radius:25px;
+  display: flex;
 }
